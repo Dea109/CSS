@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    * { 
+        margin: 0; 
+        padding: 0; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif
+
+    } 
+    header {
+        background-position: fixed;
+        background-repeat: no-repeat;
+        height: 250px;
+        background-size:cover;
+        background-image: url("51792-HEADER-1-M.webp");
+    }
+    header h1 {
+        text-align: center;
+        padding: 20% 0 0 0;
+        color:#e7e7e7;
+
+    }
+    
+    @media only screen and  (min-width: 700px) { 
+        header {
+            background-image: url("51792-HEADER-1-T.webp");
+            height: 330px;
+        }
+    }
+    @media only screen and  (min-width: 990px) { 
+        header {
+            background-image: url("51792-HEADER-1-D.webp");
+            height: 100vh;
+        }
+        header h1 {
+            font-size: 30px;
+        }
+    }
+   
+    main {
+        padding: 20px 10px;
+    }
+    h1 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    h2 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+    span {
+        color: #407a21;
+        font-weight: bold;
+    }
+    nav ul {
+         list-style: none; 
+    }
+    @media (min-width: 480px) { 
+        nav ul {
+             display: flex; 
+        } 
+        nav li {
+             flex: 1 1 auto; 
+        }
+        h1 {
+            font-size: 32px;
+        }
+    }
+
+    nav a { 
+        color: white; 
+        background: black; 
+        font-weight: bold; 
+        display: block; 
+        padding: 15px; 
+        font-size: 15px; 
+        text-decoration: none; 
+        text-align: center; 
+    } 
+    nav a:hover { 
+        background: darkgray; 
+    } 
+    @media only screen and (min-width: 768px) {
+         nav a { 
+            font-size: 20px; 
+        }
+    }
+    section { 
+        overflow: hidden;
+    }
+    div {
+        width: 93%;
+        margin: 10px;
+        padding: 10px 5px;
+        border: 1px solid darkgray;
+        box-shadow: 0 2px 3px 1px #ddd;
+        float: left;
+    }
+    @media (min-width: 540px) {
+        div {
+            width: 46%;
+        }
+    }
+    @media (min-width: 1200px) {
+        div {
+            width: 30%;
+        }
+    }
+    div img {
+        width: 100%;
+    }
+    .price {
+        margin: 30px 0 10px 0;
+    }
+    footer {
+        background-color: black;
+        padding: 10px 0;
+        margin-top: 10px;
+        text-align: center;
+        color: white
+    }
+</style>
+<body>
+    <header>
+        <h1>MARQ &reg; TOOL WATCH COLLECTION</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Homepage</a></li>
+            <li><a href="">Articles</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>LUXURY SMARTWATCHES</h2>
+        <section>
+            <div>
+                <figure id="adventurer">
+                    <img src="adventurer.webp" alt="MARQ&reg; Adventurer" title="MARQ&reg; Adventurer">
+                </figure>
+                <h2>MARQ&reg; Adventurer</h2>
+                <p>Potrebna vam je pouzdana pomoć za avanture. Za vaše vam je ekspedicije potreban luksuzan i moderan funkcionalni sat napravljen od titanija 5. klase s AMOLED zaslonom, TOPO kartama i još mnogo toga.</p>
+                <p class="price"><span>Cijena:</span> 2.250,00 &euro;</p>
+            </div>
+            <div>
+                <figure id="athlete">
+                    <img src="athlete.webp" alt="MARQ&reg; Athlete" title="MARQ&reg; Athlete">
+                </figure>
+                <h2>MARQ&reg; Athlete</h2>
+                <p>Uvijek pomičete svoje granice. Zaslužujete luksuzan i moderan funkcionalni sat napravljen od titanija 5. klase s AMOLED zaslonom i revolucionarnim funkcijama za treniranje i oporavak.</p>
+                <p class="price"><span>Cijena:</span> 1.950,00 &euro;</p>
+            </div>
+            <div>
+                <figure id="aviator">
+                    <img src="aviator.webp" alt="MARQ&reg; Aviator" title="MARQ&reg; Aviator">
+                </figure>
+                <h2>MARQ&reg; Aviator</h2>
+                <p>Želite biti spremni poletjeti u trenutku. Potreban vam je luksuzan i moderan funkcionalni sat napravljen od titanija 5. klase s AMOLED zaslonom i namjenskim funkcijama za letenje.</p>
+                <p class="price"><span>Cijena:</span> 2.550,00 &euro;</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; Dea Šumić
+    </footer>
+</body>
+</html>
